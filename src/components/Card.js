@@ -96,7 +96,7 @@ const Card = (props) => {
         let firstCard = getVal(K.FIRST_CARD);
         let firstCardIdx = getVal(K.FIRST_CARD_IDX);
         let secondCard = getVal(K.SECOND_CARD);
-        if (firstCard === secondCard && props.index != firstCardIdx) {
+        if (firstCard === secondCard && props.index !== firstCardIdx) {
           // playSound();
           removeCard(props.index);
         } else {

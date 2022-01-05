@@ -35,6 +35,7 @@ const Grid = (props) => {
 
   const removeHandler = () => {
     setRefreshId(Math.random());
+    console.log(refreshId);
     if (checkGameClean()) {
       setIsGameOver(true);
       setTimeout(() => {
