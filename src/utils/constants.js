@@ -3,10 +3,11 @@ const K = {
   FIRST_CARD: "firstCard",
   FIRST_CARD_IDX: "firstCardIndex",
   SECOND_CARD: "secondCard",
-  WIN_ANIMAITON_DURATION: 5, // seconds
+  WIN_ANIMAITON_DURATION: 2, // seconds
   CARD_FLIP_DURATION: 0.5,
   CARD_REMOVE_DURATION: 2,
   CARD_FLIP_BACK_DURATION: 2,
+  BG_COUNT: 3,
 };
 
 export default K;

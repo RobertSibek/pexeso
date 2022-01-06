@@ -1,15 +1,18 @@
+import React from "react";
 import "./App.css";
 import HomeScreen from "./screens/HomeScreen";
-import { setVal } from "./utils/helpers.js";
-import K from "./utils/constants.js";
+import { setVal } from "./utils/helpers";
+import K from "./utils/constants";
 import { useState } from "react";
-import girlsArray, { shuffleArray } from "./data/girls.js";
+import girlsArray, { shuffleArray } from "./data/girls";
+// import Store from "./data/Store";
 
 localStorage.clear();
 setVal(K.CLICK_COUNT, 0);
 
 function App() {
   const [newGame, setNewGame] = useState(0);
+  const [bgId, setBgId] = useState(0);
 
   const resetHandler = () => {
     setVal("reset", Math.random());
@@ -21,6 +24,14 @@ function App() {
     //TODO: Flip back all cards when resetting game
   };
 
+  const changeBackground = () => {
+    if (bgId < K.BG_COUNT - 1) {
+      setBgId(bgId + 1);
+    } else {
+      setBgId(0);
+    }
+  };
+
   return (
     <div className="App">
       <div className="rounds">
@@ -30,7 +41,7 @@ function App() {
         <div className="bottom-part"></div>
       </div>
       <div className="home">
-        <HomeScreen resetGame={resetHandler} game={newGame} />
+        <HomeScreen resetGame={resetHandler} game={newGame} bgId={bgId} />
       </div>
       <div className="control">
         <div className="top-part">
@@ -38,6 +49,7 @@ function App() {
         </div>
         <div className="bottom-part">
           <button onClick={resetHandler}>Reset</button>
+          <button onClick={changeBackground}>Background</button>
         </div>
       </div>
     </div>

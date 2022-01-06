@@ -3,6 +3,19 @@
   /* margin: auto auto; */
   height: 95vh;
   /* width: 95%; */
-  background-color: burlywood;
+  /* background-color: brown; */
+  /* background-image: url("../images/cloth-68946_1920.jpg"); */
+  box-shadow: 2px 2px 2px black;
+  /* background-size: cover; */
   border-radius: 20px;
+}
+
+.background1 {
+  background-image: url("../images/cloth-68946_1920.jpg");
+}
+.background2 {
+  background-image: url("../images/denim-165303_1280.jpg");
+}
+.background3 {
+  background-image: url("../images/textile-1824190_1280.jpg");
 }

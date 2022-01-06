@@ -19,7 +19,7 @@ const ShowWinningText = styled.div`
       opacity: 0;
       transform: scale(1);
     }
-    10% {
+    30% {
       opacity: 1;
       transform: scale(1);
     }
