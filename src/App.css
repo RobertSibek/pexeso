@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -55,6 +61,7 @@ button {
   border-radius: 10px;
   width: 50%;
   height: 5vh;
+  font-size: 1em;
 }
 
 /* Extra small devices (phones, 600px and down) */
