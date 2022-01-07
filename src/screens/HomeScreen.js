@@ -2,7 +2,12 @@ import Grid from "../components/Grid";
 import "./HomeScreen.css";
 
 const HomeScreen = (props) => {
-  const backgrounds = ["background1", "background2", "background3"];
+  const backgrounds = [
+    "background1",
+    "background2",
+    "background3",
+    "background4",
+  ];
 
   const callResetGame = () => {
     props.resetGame();

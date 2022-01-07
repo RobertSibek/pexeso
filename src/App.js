@@ -35,9 +35,7 @@ function App() {
   return (
     <div className="App">
       <div className="rounds">
-        <div className="top-part">
-          <h1>Rounds:</h1>
-        </div>
+        <div className="top-part">{/* <h1>Rounds:</h1> */}</div>
         <div className="bottom-part"></div>
       </div>
       <div className="home">

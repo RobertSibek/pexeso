@@ -8,6 +8,7 @@ import K from "../utils/constants.js";
 const side = Math.sqrt(girlsArray.length);
 const spacing = 2;
 
+//TODO: try to use CSS math functions as calc(), max() o rmin() to calculate responsive design
 const Square = styled.div`
   box-shadow: 2px 2px 3px grey;
   border: 2px solid black;

@@ -7,7 +7,7 @@ const K = {
   CARD_FLIP_DURATION: 0.5,
   CARD_REMOVE_DURATION: 2,
   CARD_FLIP_BACK_DURATION: 2,
-  BG_COUNT: 3,
+  BG_COUNT: 4,
 };
 
 export default K;
