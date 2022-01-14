@@ -6,6 +6,7 @@ import K from "./utils/constants";
 import { useState } from "react";
 import girlsArray, { shuffleArray } from "./data/girls";
 // here are changes from the second branch
+// here are changes from new1 branch
 
 localStorage.clear();
 setVal(K.CLICK_COUNT, 0);
