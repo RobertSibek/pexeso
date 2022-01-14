@@ -5,7 +5,7 @@ import { setVal } from "./utils/helpers";
 import K from "./utils/constants";
 import { useState } from "react";
 import girlsArray, { shuffleArray } from "./data/girls";
-// import Store from "./data/Store";
+// here are changes from new1 branch
 
 localStorage.clear();
 setVal(K.CLICK_COUNT, 0);
